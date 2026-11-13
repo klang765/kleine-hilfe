@@ -1,0 +1,100 @@
+/* Zusätzliche Typografie für Ratgeberseiten. Baut auf css/style.css auf. */
+.article {
+  max-width: 44rem;
+  padding: 2.6rem 0 4rem;
+}
+.article .crumbs { margin-bottom: 1.4rem; }
+.article h1 { margin-bottom: 0.7rem; }
+.article .lede { margin-bottom: 0.8rem; }
+.article-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 1.8rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--line);
+}
+.article-hero-img {
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  background: #efe6dc;
+  margin: 0 0 2rem;
+}
+.article h2 {
+  margin-top: 2.2rem;
+  font-size: 1.45rem;
+}
+.article h3 {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+}
+.article p { margin: 0 0 1rem; color: var(--ink); }
+.article li { margin: 0 0 0.45rem; }
+.article ul, .article ol { margin: 0 0 1.2rem; padding-left: 1.25rem; }
+.article .muted { color: var(--muted); }
+.toc {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.1rem 1.3rem 0.9rem;
+  margin: 0 0 2rem;
+}
+.toc h2 { font-size: 1.05rem; margin: 0 0 0.6rem; }
+.toc ol { margin: 0; padding-left: 1.2rem; }
+.toc a { color: var(--ink); text-decoration: none; }
+.toc a:hover { color: var(--terra-dark); }
+.article .note, .article .callout { margin: 1.4rem 0; }
+.related {
+  margin-top: 2.6rem;
+  padding-top: 0.4rem;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
+}
+.related a.card h3 { font-size: 1.05rem; margin: 0; }
+.related a.card .price { font-size: 1.15rem; }
+.more-guides {
+  margin-top: 2.2rem;
+}
+.more-guides ul { list-style: none; padding: 0; margin: 0; }
+.more-guides li {
+  border-top: 1px solid var(--line);
+  padding: 0.7rem 0;
+  margin: 0;
+}
+.more-guides a { color: var(--ink); text-decoration: none; font-weight: 700; }
+.more-guides a:hover { color: var(--terra-dark); }
+.guide-index { padding: 2.6rem 0 4rem; }
+.guide-list {
+  display: grid;
+  gap: 1.1rem;
+}
+.guide-teaser {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 1.3rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow);
+}
+.guide-teaser:hover { color: inherit; transform: translateY(-2px); }
+.guide-teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #efe6dc;
+  min-height: 8.5rem;
+}
+.guide-teaser .body { padding: 1.1rem 1.2rem 1.2rem; }
+.guide-teaser h2 { font-size: 1.25rem; margin: 0 0 0.35rem; }
+.guide-teaser p { margin: 0; color: var(--muted); }
+@media (max-width: 700px) {
+  .related-grid { grid-template-columns: 1fr; }
+  .guide-teaser { grid-template-columns: 1fr; }
+  .guide-teaser img { aspect-ratio: 16/9; min-height: 0; }
+}

@@ -325,19 +325,29 @@ a.card:hover { transform: translateY(-4px); color: inherit; }
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
-  margin: 0 0 1.8rem;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0.45rem 0.5rem;
+  margin: 0 0 1.6rem;
+  padding: 0.7rem 0.8rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
 }
 .filter-btn {
-  background: var(--card);
+  background: #fff;
   color: var(--ink);
   border: 1.5px solid var(--line);
   border-radius: 999px;
-  padding: 0.45rem 0.95rem;
+  padding: 0.4rem 0.85rem;
   font: inherit;
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 700;
   cursor: pointer;
+  flex: 0 0 auto;
+  line-height: 1.25;
+  white-space: nowrap;
 }
 .filter-btn:hover { border-color: var(--terra); color: var(--terra-dark); }
 .filter-btn.is-active {
@@ -378,6 +388,10 @@ a.card:hover { transform: translateY(-4px); color: inherit; }
 .btn-wine:hover { background: #6A3240; }
 .btn-ink { background: #3D4F6F; }
 .btn-ink:hover { background: #2C3A54; }
+.btn-pine { background: #5C6C56; }
+.btn-pine:hover { background: #3F4C3B; }
+.btn-clay { background: #7E564A; }
+.btn-clay:hover { background: #5C3C34; }
 .filter-empty {
   display: none;
   color: var(--muted);
@@ -478,7 +492,7 @@ a.card:hover { transform: translateY(-4px); color: inherit; }
 .catalog-empty.is-visible { display: block; }
 .cat-tiles {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }
 .cat-tile {
@@ -508,6 +522,11 @@ a.card:hover { transform: translateY(-4px); color: inherit; }
 @media (max-width: 1100px) {
   .cat-tiles { grid-template-columns: repeat(2, 1fr); }
 }
+@media (min-width: 1101px) and (max-width: 1320px) {
+  .cat-tiles { grid-template-columns: repeat(5, 1fr); }
+  .cat-tile strong { font-size: 1.02rem; }
+}
+
 .catalog-table .col-meta { display: none; }
 @media (max-width: 800px) {
   .catalog-table thead { display: none; }
