@@ -102,6 +102,25 @@ a:hover { color: var(--terra); }
 .btn-ghost:hover { background: var(--ink); color: #fff !important; }
 .btn-lg { padding: 1rem 1.7rem; font-size: 1.05rem; }
 
+.btn[disabled],
+.btn[aria-disabled="true"],
+.btn-disabled {
+  background: #9A9086 !important;
+  color: #fff !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.85;
+}
+.btn[disabled]:hover,
+.btn[aria-disabled="true"]:hover,
+.btn-disabled:hover {
+  background: #9A9086 !important;
+  transform: none;
+}
+.buy-box .shop-soon { margin: 0.65rem 0 0; }
+
 /* Hero */
 .hero { padding: 4.2rem 0 3.2rem; }
 .hero-grid {

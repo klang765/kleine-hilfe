@@ -8,7 +8,7 @@ Die Seite läuft auf GitHub Pages:
 
 Die vollständige Übersicht (76 Planer und Pakete) findest du unter [Alle Produkte](https://klang765.github.io/kleine-hilfe/produkte.html).
 
-Zahlung und Download sind für Lemon Squeezy vorbereitet. Die Kauf-Buttons sind noch Platzhalter, bis der Store eingerichtet ist.
+Die Kauf-Buttons zeigen derzeit „Bald verfügbar“. Zahlung und Download über Lemon Squeezy folgen, sobald der Shop öffnet.
 
 ## Auffindbarkeit in Google
 
