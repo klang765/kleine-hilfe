@@ -357,6 +357,8 @@ a.card:hover { transform: translateY(-4px); color: inherit; }
 .btn-slate:hover { background: #334C66; }
 .btn-wine { background: #8B4A5A; }
 .btn-wine:hover { background: #6A3240; }
+.btn-ink { background: #3D4F6F; }
+.btn-ink:hover { background: #2C3A54; }
 .filter-empty {
   display: none;
   color: var(--muted);
