@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alle Produkte – Kleine-Hilfe</title>
+  <meta name="description" content="Alle 38 PDF-Planer von Kleine-Hilfe in einer Übersicht: filtern, suchen und nach Name oder Preis sortieren.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">Kleine-Hilfe</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Start</a>
+        <a href="produkte.html" aria-current="page">Alle Produkte</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <p class="crumbs"><a href="index.html">Start</a> · Alle Produkte</p>
+        <div class="section-head">
+          <h1>Alle Produkte</h1>
+          <p>38 Planer und Pakete zum Ausdrucken. Filtere nach Thema, suche nach Namen oder sortiere nach Preis.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Nach Kategorie filtern">
+          <button type="button" class="filter-btn is-active" data-filter="alle">Alle</button><button type="button" class="filter-btn" data-filter="alltag">Alltag & Organisation</button><button type="button" class="filter-btn" data-filter="finanzen">Finanzen</button><button type="button" class="filter-btn" data-filter="familie">Familie & Kinder</button><button type="button" class="filter-btn" data-filter="gesundheit">Gesundheit & Selbstfürsorge</button><button type="button" class="filter-btn" data-filter="schule">Schule & Lernen</button><button type="button" class="filter-btn" data-filter="events">Events</button><button type="button" class="filter-btn" data-filter="pakete">Pakete</button>
+        </div>
+        <div class="catalog-toolbar">
+          <label class="visually-hidden" for="catalog-search">Produkte suchen</label>
+          <input class="catalog-search" id="catalog-search" type="search" placeholder="Nach Namen oder Thema suchen …" autocomplete="off">
+          <p class="catalog-count" id="catalog-count">38 Planer und Pakete</p>
+        </div>
+        <div class="catalog-wrap">
+          <table class="catalog-table">
+            <thead>
+              <tr>
+                <th class="col-thumb"><span class="visually-hidden">Bild</span></th>
+                <th><button type="button" class="sort-btn" data-sort="name">Name</button></th>
+                <th>Kategorie</th>
+                <th>Seiten</th>
+                <th><button type="button" class="sort-btn" data-sort="price">Preis</button></th>
+                <th><span class="visually-hidden">Aktion</span></th>
+              </tr>
+            </thead>
+            <tbody id="catalog-body"></tbody>
+          </table>
+          <p class="catalog-empty" id="catalog-empty">Dazu gibt es gerade keinen Treffer. Versuch ein anderes Wort oder setze den Filter auf „Alle“.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="index.html">Kleine-Hilfe</a>
+        <p class="muted">Ruhige PDF-Planer zum Ausdrucken. Für den Alltag, der oft schon voll genug ist.</p>
+      </div>
+      <div>
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="produkte.html">Alle Produkte</a></li>
+          <li><a href="produkte.html#kategorie=pakete">Pakete</a></li>
+          <li><a href="produkte.html#kategorie=alltag">Alltag &amp; Organisation</a></li>
+          <li><a href="produkte.html#kategorie=finanzen">Finanzen</a></li>
+          <li><a href="produkte.html#kategorie=familie">Familie &amp; Kinder</a></li>
+          <li><a href="faq.html">Häufige Fragen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="widerruf.html">Widerrufsbelehrung</a></li>
+          <li><a href="agb.html">AGB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap copyright">
+      <p>© 2026 Kleine-Hilfe. Digitale Produkte, Zahlung und Lieferung über Lemon Squeezy (Merchant of Record).</p>
+    </div>
+  </footer>
+  <script>window.KLEINE_HILFE_PRODUCTS = [
+  {
+    "name": "ADHS-Alltagsplaner",
+    "slug": "adhs-alltagsplaner",
+    "category": "Gesundheit & Selbstfürsorge",
+    "key": "gesundheit",
+    "price": "12,90",
+    "priceValue": 12.9,
+    "pages": 18,
+    "href": "produkt-adhs-alltagsplaner.html",
+    "image": "images/adhs-alltagsplaner-mockup.png"
+  },
+  {
+    "name": "Haushaltsbuch & Budgetplaner",
+    "slug": "haushaltsbuch",
+    "category": "Finanzen",
+    "key": "finanzen",
+    "price": "9,90",
+    "priceValue": 9.9,
+    "pages": 16,
+    "href": "produkt-haushaltsbuch.html",
+    "image": "images/haushaltsbuch-mockup.png"
+  },
+  {
+    "name": "Wochen-Essensplaner",
+    "slug": "essensplaner",
+    "category": "Alltag & Organisation",
+    "key": "alltag",
+    "price": "6,90",
+    "priceValue": 6.9,
+    "pages": 14,
+    "href": "produkt-essensplaner.html",
+    "image": "images/essensplaner-mockup.png"
+  },
+  {
+    "name": "Gewohnheitstracker",
+    "slug": "gewohnheitstracker",
+    "category": "Alltag & Organisation",
+    "key": "alltag",
+    "price": "7,90",
+    "priceValue": 7.9,
+    "pages": 14,
+    "href": "produkt-gewohnheitstracker.html",
+    "image": "images/gewohnheitstracker-mockup.png"
+  },
+  {
+    "name": "Putzplan",
+    "slug": "putzplan",
+    "category": "Alltag & Organisation",
+    "key": "alltag",
+    "price": "6,90",
+    "priceValue": 6.9,
+    "pages": 14,
+    "href": "produkt-putzplan.html",
+    "image": "images/putzplan-mockup.png"
+  },
+  {
+    "name": "Undatierter Wochenplaner",
+    "slug": "wochenplaner",
+    "category": "Alltag & Organisation",
+    "key": "alltag",
+    "price": "7,90",
+    "priceValue": 7.9,
+    "pages": 16,
+    "href": "produkt-wochenplaner.html",
+    "image": "images/wochenplaner-mockup.png"
+  },
+  {
+    "name": "Reiseplaner",
+    "slug": "reiseplaner",
+    "category": "Alltag & Organisation",
+    "key": "alltag",
+    "price": "8,90",
+    "priceValue": 8.9,
+    "pages": 15,
+    "href": "produkt-reiseplaner.html",
+    "image": "images/reiseplaner-mockup.png"
+  },
+  {
+    "name": "Umzugsplaner",
+    "slug": "umzugsplaner",
+    "category": "Alltag & Organisation",
+    "key": "alltag",
+    "price": "9,90",
+    "priceValue": 9.9,
+    "pages": 15,
+    "href": "produkt-umzugsplaner.html",
+    "image": "images/umzugsplaner-mockup.png"
+  },
+  {
+    "name": "Garten-Planer",
+    "slug": "gartenplaner",
+    "category": "Alltag & Organisation",
+    "key": "alltag",
+    "price": "7,90",
+    "priceValue": 7.9,
+    "pages": 14,
+    "href": "produkt-gartenplaner.html",
+    "image": "images/gartenplaner-mockup.png"
+  },
+  {
+    "name": "Rezeptbuch",
+    "slug": "rezeptbuch",
+    "category": "Alltag & Organisation",
+    "key": "alltag",
+    "price": "6,90",
+    "priceValue": 6.9,
+    "pages": 16,
+    "href": "produkt-rezeptbuch.html",
+    "image": "images/rezeptbuch-mockup.png"
+  },
+  {
+    "name": "Notfallordner",
+    "slug": "notfallordner",
+    "category": "Alltag & Organisation",
+    "key": "alltag",
+    "price": "9,90",
+    "priceValue": 9.9,
+    "pages": 16,
+    "href": "produkt-notfallordner.html",
+    "image": "images/notfallordner-mockup.png"
+  },
+  {
+    "name": "Sparchallenge-Set",
+    "slug": "sparchallenge",
+    "category": "Finanzen",
+    "key": "finanzen",
+    "price": "5,90",
+    "priceValue": 5.9,
+    "pages": 14,
+    "href": "produkt-sparchallenge.html",
+    "image": "images/sparchallenge-mockup.png"
+  },
+  {
+    "name": "Schuldenabbau-Planer",
+    "slug": "schuldenabbau",
+    "category": "Finanzen",
+    "key": "finanzen",
+    "price": "8,90",
+    "priceValue": 8.9,
+    "pages": 14,
+    "href": "produkt-schuldenabbau.html",
+    "image": "images/schuldenabbau-mockup.png"
+  },
+  {
+    "name": "Abo- & Vertragsübersicht",
+    "slug": "abo-vertragsuebersicht",
+    "category": "Finanzen",
+    "key": "finanzen",
+    "price": "5,90",
+    "priceValue": 5.9,
+    "pages": 12,
+    "href": "produkt-abo-vertragsuebersicht.html",
+    "image": "images/abo-vertragsuebersicht-mockup.png"
+  },
+  {
+    "name": "Sparziel- & Notgroschenplaner",
+    "slug": "sparzielplaner",
+    "category": "Finanzen",
+    "key": "finanzen",
+    "price": "6,90",
+    "priceValue": 6.9,
+    "pages": 12,
+    "href": "produkt-sparzielplaner.html",
+    "image": "images/sparzielplaner-mockup.png"
+  },
+  {
+    "name": "Familienkalender",
+    "slug": "familienkalender",
+    "category": "Familie & Kinder",
+    "key": "familie",
+    "price": "8,90",
+    "priceValue": 8.9,
+    "pages": 16,
+    "href": "produkt-familienkalender.html",
+    "image": "images/familienkalender-mockup.png"
+  },
+  {
+    "name": "Kinder-Belohnungstafel",
+    "slug": "belohnungstafel",
+    "category": "Familie & Kinder",
+    "key": "familie",
+    "price": "5,90",
+    "priceValue": 5.9,
+    "pages": 12,
+    "href": "produkt-belohnungstafel.html",
+    "image": "images/belohnungstafel-mockup.png"
+  },
+  {
+    "name": "Wochenplaner für Kinder",
+    "slug": "wochenplaner-kinder",
+    "category": "Familie & Kinder",
+    "key": "familie",
+    "price": "7,90",
+    "priceValue": 7.9,
+    "pages": 14,
+    "href": "produkt-wochenplaner-kinder.html",
+    "image": "images/wochenplaner-kinder-mockup.png"
+  },
+  {
+    "name": "Babyplaner",
+    "slug": "babyplaner",
+    "category": "Familie & Kinder",
+    "key": "familie",
+    "price": "11,90",
+    "priceValue": 11.9,
+    "pages": 17,
+    "href": "produkt-babyplaner.html",
+    "image": "images/babyplaner-mockup.png"
+  },
+  {
+    "name": "ADHS-Planer für Kinder",
+    "slug": "adhs-planer-kinder",
+    "category": "Familie & Kinder",
+    "key": "familie",
+    "price": "11,90",
+    "priceValue": 11.9,
+    "pages": 16,
+    "href": "produkt-adhs-planer-kinder.html",
+    "image": "images/adhs-planer-kinder-mockup.png"
+  },
+  {
+    "name": "Familien-Routinenplaner",
+    "slug": "familien-routinen",
+    "category": "Familie & Kinder",
+    "key": "familie",
+    "price": "6,90",
+    "priceValue": 6.9,
+    "pages": 12,
+    "href": "produkt-familien-routinen.html",
+    "image": "images/familien-routinen-mockup.png"
+  },
+  {
+    "name": "Selbstfürsorge-Journal",
+    "slug": "selbstfuersorge-journal",
+    "category": "Gesundheit & Selbstfürsorge",
+    "key": "gesundheit",
+    "price": "9,90",
+    "priceValue": 9.9,
+    "pages": 16,
+    "href": "produkt-selbstfuersorge-journal.html",
+    "image": "images/selbstfuersorge-journal-mockup.png"
+  },
+  {
+    "name": "Dankbarkeitstagebuch",
+    "slug": "dankbarkeitstagebuch",
+    "category": "Gesundheit & Selbstfürsorge",
+    "key": "gesundheit",
+    "price": "7,90",
+    "priceValue": 7.9,
+    "pages": 14,
+    "href": "produkt-dankbarkeitstagebuch.html",
+    "image": "images/dankbarkeitstagebuch-mockup.png"
+  },
+  {
+    "name": "Stimmungstagebuch",
+    "slug": "stimmungstagebuch",
+    "category": "Gesundheit & Selbstfürsorge",
+    "key": "gesundheit",
+    "price": "6,90",
+    "priceValue": 6.9,
+    "pages": 14,
+    "href": "produkt-stimmungstagebuch.html",
+    "image": "images/stimmungstagebuch-mockup.png"
+  },
+  {
+    "name": "Fitness- & Wohlfühl-Tracker",
+    "slug": "fitness-tracker",
+    "category": "Gesundheit & Selbstfürsorge",
+    "key": "gesundheit",
+    "price": "8,90",
+    "priceValue": 8.9,
+    "pages": 14,
+    "href": "produkt-fitness-tracker.html",
+    "image": "images/fitness-tracker-mockup.png"
+  },
+  {
+    "name": "Medikamentenplan",
+    "slug": "medikamentenplan",
+    "category": "Gesundheit & Selbstfürsorge",
+    "key": "gesundheit",
+    "price": "5,90",
+    "priceValue": 5.9,
+    "pages": 10,
+    "href": "produkt-medikamentenplan.html",
+    "image": "images/medikamentenplan-mockup.png"
+  },
+  {
+    "name": "Schlafjournal",
+    "slug": "schlafjournal",
+    "category": "Gesundheit & Selbstfürsorge",
+    "key": "gesundheit",
+    "price": "6,90",
+    "priceValue": 6.9,
+    "pages": 13,
+    "href": "produkt-schlafjournal.html",
+    "image": "images/schlafjournal-mockup.png"
+  },
+  {
+    "name": "Lernplaner Schule",
+    "slug": "lernplaner-schule",
+    "category": "Schule & Lernen",
+    "key": "schule",
+    "price": "8,90",
+    "priceValue": 8.9,
+    "pages": 16,
+    "href": "produkt-lernplaner-schule.html",
+    "image": "images/lernplaner-schule-mockup.png"
+  },
+  {
+    "name": "Studienplaner",
+    "slug": "studienplaner",
+    "category": "Schule & Lernen",
+    "key": "schule",
+    "price": "9,90",
+    "priceValue": 9.9,
+    "pages": 16,
+    "href": "produkt-studienplaner.html",
+    "image": "images/studienplaner-mockup.png"
+  },
+  {
+    "name": "Lesetagebuch",
+    "slug": "lesetagebuch",
+    "category": "Schule & Lernen",
+    "key": "schule",
+    "price": "6,90",
+    "priceValue": 6.9,
+    "pages": 13,
+    "href": "produkt-lesetagebuch.html",
+    "image": "images/lesetagebuch-mockup.png"
+  },
+  {
+    "name": "Bewerbungsset",
+    "slug": "bewerbungsset",
+    "category": "Schule & Lernen",
+    "key": "schule",
+    "price": "8,90",
+    "priceValue": 8.9,
+    "pages": 14,
+    "href": "produkt-bewerbungsset.html",
+    "image": "images/bewerbungsset-mockup.png"
+  },
+  {
+    "name": "ADHS-Studienplaner",
+    "slug": "adhs-studienplaner",
+    "category": "Schule & Lernen",
+    "key": "schule",
+    "price": "11,90",
+    "priceValue": 11.9,
+    "pages": 16,
+    "href": "produkt-adhs-studienplaner.html",
+    "image": "images/adhs-studienplaner-mockup.png"
+  },
+  {
+    "name": "Hausaufgabenplaner",
+    "slug": "hausaufgabenplaner",
+    "category": "Schule & Lernen",
+    "key": "schule",
+    "price": "6,90",
+    "priceValue": 6.9,
+    "pages": 12,
+    "href": "produkt-hausaufgabenplaner.html",
+    "image": "images/hausaufgabenplaner-mockup.png"
+  },
+  {
+    "name": "Hochzeitsplaner",
+    "slug": "hochzeitsplaner",
+    "category": "Events",
+    "key": "events",
+    "price": "14,90",
+    "priceValue": 14.9,
+    "pages": 19,
+    "href": "produkt-hochzeitsplaner.html",
+    "image": "images/hochzeitsplaner-mockup.png"
+  },
+  {
+    "name": "Geburtstags- & Partyplaner",
+    "slug": "partyplaner",
+    "category": "Events",
+    "key": "events",
+    "price": "7,90",
+    "priceValue": 7.9,
+    "pages": 14,
+    "href": "produkt-partyplaner.html",
+    "image": "images/partyplaner-mockup.png"
+  },
+  {
+    "name": "Alltags-Paket",
+    "slug": "bundle-alltag",
+    "category": "Pakete",
+    "key": "pakete",
+    "price": "22,90",
+    "priceValue": 22.9,
+    "pages": 62,
+    "href": "produkt-bundle-alltag.html",
+    "image": "images/bundle-alltag-mockup.png"
+  },
+  {
+    "name": "Wohlfühl-Paket",
+    "slug": "bundle-wohlfuehl",
+    "category": "Pakete",
+    "key": "pakete",
+    "price": "24,90",
+    "priceValue": 24.9,
+    "pages": 61,
+    "href": "produkt-bundle-wohlfuehl.html",
+    "image": "images/bundle-wohlfuehl-mockup.png"
+  },
+  {
+    "name": "Familien-Paket",
+    "slug": "bundle-familie",
+    "category": "Pakete",
+    "key": "pakete",
+    "price": "22,90",
+    "priceValue": 22.9,
+    "pages": 58,
+    "href": "produkt-bundle-familie.html",
+    "image": "images/bundle-familie-mockup.png"
+  }
+];</script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
